@@ -22,6 +22,7 @@ class ExpandableSchoolCell: UITableViewCell {
     var index = 0
     var indexPath: IndexPath?
 
+
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -34,6 +35,10 @@ class ExpandableSchoolCell: UITableViewCell {
     @objc func changeExpandState() {
         detailView.isHidden = !detailView.isHidden
         delegate?.didChangeExpandedState(for: detailView.isHidden ? nil : indexPath)
+    }
+
+    public func collapse() {
+        detailView.isHidden = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -51,6 +56,10 @@ class ExpandableSchoolCell: UITableViewCell {
         detailView.isHidden = !expanded
         self.index = index.row
         self.indexPath = index
+    }
+
+    @IBAction func didTapDetailButton(_ sender: Any) {
+        delegate?.didTapDetailsButton(for: index)
     }
     
 }

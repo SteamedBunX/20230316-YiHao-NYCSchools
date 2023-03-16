@@ -53,12 +53,15 @@ extension SchoolTableViewController: UITableViewDelegate, UITableViewDataSource 
 
 extension SchoolTableViewController: ExpandableSchoolCellDelegate {
     func didTapDetailsButton(for index: Int) {
-
+        // open the detail window with the specific school
     }
 
     func didChangeExpandedState(for index: IndexPath?) {
         if !Schools.shared.loading {
             currentlyExpanded = index
+            for case let cell as ExpandableSchoolCell in tableView.visibleCells {
+                cell.collapse()
+            }
             tableView.reloadRows(at: [index ?? IndexPath(row: 0, section: 0)], with: .automatic)
         }
     }

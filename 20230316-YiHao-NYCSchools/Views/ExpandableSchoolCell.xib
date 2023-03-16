@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1005" height="80"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l53-c7-v2d">
-                                <rect key="frame" x="935" y="25" width="60" height="30"/>
+                                <rect key="frame" x="934.66666666666663" y="25" width="60.333333333333371" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +77,9 @@
                                 <rect key="frame" x="927.33333333333337" y="175" width="47.666666666666629" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="doc.text.magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapDetailButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RUv-RX-WYF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
