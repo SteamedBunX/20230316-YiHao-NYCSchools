@@ -8,8 +8,8 @@
 import UIKit
 
 class Coordinator {
-    var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    var detailViewController: SchoolDetailsViewController?
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -19,5 +19,16 @@ class Coordinator {
         let vc = SchoolTableViewController()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
+    }
+
+    func presentDetailView(for school: School) {
+        print("we inside the coordinator")
+        if detailViewController == nil {
+            detailViewController = SchoolDetailsViewController()
+            detailViewController?.coordinator = self
+        }
+        guard let detailViewController = detailViewController else { return }
+        detailViewController.config(for: school)
+        navigationController.pushViewController(detailViewController, animated: true)
     }
 }

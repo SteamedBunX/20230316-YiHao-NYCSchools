@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA63E9FD29C3EDB500138B69 /* DetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E9FC29C3EDB500138B69 /* DetailInfoCell.swift */; };
 		EAB20DD929C35E72000812F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB20DD729C35E72000812F9 /* MainViewController.swift */; };
 		EAB20DDA29C35E72000812F9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB20DD829C35E72000812F9 /* MainViewController.xib */; };
 		EAB20DDF29C35F62000812F9 /* SchoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB20DDD29C35F62000812F9 /* SchoolTableViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA63E9FC29C3EDB500138B69 /* DetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoCell.swift; sourceTree = "<group>"; };
 		EAB20DD729C35E72000812F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EAB20DD829C35E72000812F9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		EAB20DDD29C35F62000812F9 /* SchoolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				EAB20DE429C36306000812F9 /* SchoolDetailsViewController.xib */,
 				EAB20DF629C39534000812F9 /* ExpandableSchoolCell.swift */,
 				EAB20DF729C39534000812F9 /* ExpandableSchoolCell.xib */,
+				EA63E9FC29C3EDB500138B69 /* DetailInfoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB20DE929C365CC000812F9 /* School.swift in Sources */,
+				EA63E9FD29C3EDB500138B69 /* DetailInfoCell.swift in Sources */,
 				EAE037E429C35BC600F1EA87 /* AppDelegate.swift in Sources */,
 				EAB20DE529C36306000812F9 /* SchoolDetailsViewController.swift in Sources */,
 				EAB20DF329C36B37000812F9 /* Schools.swift in Sources */,

@@ -43,8 +43,6 @@ class ExpandableSchoolCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     public func config(school: School, index: IndexPath, expanded: Bool) {
@@ -61,7 +59,6 @@ class ExpandableSchoolCell: UITableViewCell {
     @IBAction func didTapDetailButton(_ sender: Any) {
         delegate?.didTapDetailsButton(for: index)
     }
-    
 }
 
 protocol ExpandableSchoolCellDelegate {

@@ -9,9 +9,8 @@ import UIKit
 
 class SchoolTableViewController: UIViewController {
 
-
     @IBOutlet weak var tableView: UITableView!
-    var coordinator: Coordinator?
+    weak var coordinator: Coordinator?
     var currentlyExpanded: IndexPath?
 
     override func viewDidLoad() {
@@ -53,7 +52,8 @@ extension SchoolTableViewController: UITableViewDelegate, UITableViewDataSource 
 
 extension SchoolTableViewController: ExpandableSchoolCellDelegate {
     func didTapDetailsButton(for index: Int) {
-        // open the detail window with the specific school
+        print(self.coordinator)
+        coordinator?.presentDetailView(for: Schools.shared.schoolsArray[index])
     }
 
     func didChangeExpandedState(for index: IndexPath?) {
